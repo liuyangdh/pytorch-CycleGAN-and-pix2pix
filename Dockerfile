@@ -12,8 +12,9 @@ ENV PATH=/miniconda/bin:${PATH}
 RUN conda update -y conda
 
 RUN conda install -y pytorch torchvision -c pytorch
-RUN pip install -r requirements.txt
 
 # copy files inside
 COPY . /p2p
-WORKDIR /p2p
+WORKDIR "p2p"
+
+RUN pip install -r requirements.txt

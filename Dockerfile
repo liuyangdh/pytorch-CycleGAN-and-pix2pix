@@ -8,4 +8,4 @@ RUN pip --no-cache-dir install -r /tmp/requirements.txt
 
 # copy files inside
 COPY . /p2p
-WORKDIR "p2p"
+WORKDIR /p2p
